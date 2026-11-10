@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife | É Hora do Seu Show</title>
+    <!-- Google Fonts para visual moderno e jovem -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/academia/syle.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo">Fit<span>Life</span></div>
+            <nav class="nav-menu">
+                <a href="#beneficios">Benefícios</a>
+                <a href="#planos">Planos</a>
+                <a href="#matricula" class="btn-nav">Começar Agora</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (Apresentação Visual) -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>TREINE NA SUA <span>EVOLUÇÃO</span></h1>
+            <p>Ambiente ultra moderno, comunidade foda e os melhores equipamentos para você esmagar suas metas. Venha fazer parte do movimento FitLife.</p>
+            <a href="#matricula" class="btn-primary">Garanta Sua Vaga</a>
+        </div>
+    </section>
+
+    <!-- DIFERENCIAIS / BENEFÍCIOS -->
+    <section id="beneficios" class="benefits">
+        <div class="container">
+            <h2 class="section-title">Por que treinar na <span>FitLife</span>?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="icon">⚡</div>
+                    <h3>Equipamentos Premium</h3>
+                    <p>Maquinário de última geração para máxima performance.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">📱</div>
+                    <h3>Treinos no App</h3>
+                    <p>Ficha de treino digital e acompanhamento de evolução na palma da mão.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">🎧</div>
+                    <h3>Ambiente Conectado</h3>
+                    <p>Som ambiente comandado por DJ, iluminação dinâmica e Wi-Fi de alta velocidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULÁRIO DE PRÉ-MATRÍCULA -->
+    <section id="matricula" class="registration">
+        <div class="container registration-flex">
+            <div class="registration-text">
+                <h2>Dê o primeiro passo rumo ao <span>próximo nível</span>.</h2>
+                <p>Preencha a pré-matrícula ao lado. Nossa equipe de recepção entrará em contato por e-mail ou WhatsApp para liberar seu acesso exclusivo com desconto!</p>
+            </div>
+            
+            <div class="form-container">
+                <h3>Faça sua Pré-Matrícula</h3>
+                <!-- Integração Serverless com Formspree (Substitua pelo seu ID) -->
+                <form action="https://formspree.io" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" name="name" placeholder="Ex: João Silva" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Seu Melhor E-mail</label>
+                        <input type="email" id="email" name="_replyto" placeholder="Ex: joao@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">WhatsApp</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Ex: (11) 99999-9999" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="plan">Escolha seu Plano</label>
+                        <select id="plan" name="plan" required>
+                            <option value="" disabled selected>Selecione um plano...</option>
+                            <option value="Smart - R$ 99,90/mês">Plano Smart - R$ 99,90/mês</option>
+                            <option value="Black - R$ 139,90/mês">Plano Black (Tudo Incluso) - R$ 139,90/mês</option>
+                        </select>
+                    </div>
+
+                    <!-- Configurações adicionais do Formspree -->
+                    <input type="hidden" name="_subject" value="Nova Pré-Matrícula FitLife!">
+                    
+                    <button type="submit" class="btn-submit">Enviar Inscrição</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 FitLife Academia. Todos os direitos reservados.</p>
+            <p>Foco • Força • Comunidade</p>
+        </div>
+    </footer>
+
+</body>
+</html>
